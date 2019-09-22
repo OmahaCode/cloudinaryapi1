@@ -1,39 +1,1527 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-  <!-- SITE TITTLE -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html><head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Classimax</title>
-  
-  <!-- FAVICON -->
-  <link href="img/favicon.png" rel="shortcut icon">
-  <!-- PLUGINS CSS STYLE -->
-  <!-- <link href="plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet"> -->
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap-slider.css">
-  <!-- Font Awesome -->
-  <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <!-- Owl Carousel -->
-  <link href="plugins/slick-carousel/slick/slick.css" rel="stylesheet">
-  <link href="plugins/slick-carousel/slick/slick-theme.css" rel="stylesheet">
-  <!-- Fancy Box -->
-  <link href="plugins/fancybox/jquery.fancybox.pack.css" rel="stylesheet">
-  <link href="plugins/jquery-nice-select/css/nice-select.css" rel="stylesheet">
-  <!-- CUSTOM CSS -->
-  <link href="css/style.css" rel="stylesheet">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <link rel="stylesheet" media="all" href="https://res.cloudinary.com/nkh/raw/upload/v1567721571/minify-bg-merchant.css">
+  <link href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" rel="stylesheet">
+  <style> html,
+
+body {
+    overflow-x: hidden !important;
+    overflow-y: auto;
+}
+
+p {
+
+    font-size: .8975rem;
+    line-height: 1.6;
+    letter-spacing: -.00278rem;
+    font-family: 'Helvetica', sans-serif;
+    -webkit-font-smoothing: auto;
+    color: #222;
+    opacity: .9;
+
+}
+
+pingendo {
+    display: none;
+    background: transparent;
+}
+
+.custom_header ul {
+
+    max-width: 330px;
+    font-size: 14px;
+    font-family: 'Helvetica', sans-serif;
+    color: #343a40;
+
+}
+
+.visit-btn-width {
+
+    min-width: 160px;
+    margin-bottom: -8px !important;
+
+}
+
+.card-title {
+
+    margin-bottom: .1rem !important;
+}
 
 
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
 
+.merchant-img-logo {
+    max-width: 100px !important;
+    max-height: 30px !important;
+}
+
+
+
+.btn-secondary {
+    background: #F6AE18 !important;
+    border-color: #F6AE18 !important;
+}
+
+
+.merchant-header {
+    font-size: 20px !important;
+}
+
+
+
+.bg-gray {
+    background-color: #fafafa !important;
+}
+
+.merchant-image-container {
+    height: 225px !important;
+    width: 168px !important;
+}
+
+.mobile-header {
+    display: none;
+}
+
+.merchant-card-container {
+    height: 224px !important;
+    min-width: 203px !important;
+}
+
+.card-bg-gray {
+    background-color: #f5f5f5 !important;
+
+}
+
+.merchant-title {
+    font-size: 1.5rem !important;
+
+    font-weight: 400 !important;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.merchant-sidebar {
+
+    min-width: 295px !important;
+    max-width: 295px;
+}
+
+.merchant-coupon {
+
+    font-weight: 600 !important;
+    color: cornflowerblue;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 20px !important;
+    color: #0076FF;
+    text-align: center;
+}
+
+.card-header-size {
+
+    font-family: Helvetica;
+    font-size: 13px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 15px;
+}
+
+
+.green-check-img {
+    background-image: url(https://res.cloudinary.com/nkh/image/upload/v1558479878/check-svg.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 16px;
+    height: 20px !important;
+    width: 16px !important;
+    margin-left: -2px;
+}
+
+.vist_btn {
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+    border-radius: 0 !important;
+    background: #F4AD31;
+    box-shadow: 1px 2px 2px 0 rgba(152, 151, 151, 0.73);
+    font-family: HelveticaNeue-Medium;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.50);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+}
+
+.detail_text li {
+    list-style-position: inside !important;
+    text-indent: 0px;
+    margin-left: 0 !important;
+    list-style-type: none !important;
+    background: url(https://res.cloudinary.com/nkh/image/upload/v1558479878/check-svg.svg) no-repeat !important;
+    background-size: 13px !important;
+    background-position: 0px 5px;
+}
+
+.merchant-rating {
+    font-family: Helvetica-Bold;
+    font-size: 25px;
+    color: #333333;
+    text-align: center;
+}
+
+.fa-star:before {
+    content: "\f005";
+    font-size: 14px;
+    color: #F6AE0B;
+
+}
+
+.bg-white {
+    background-color: #fff !important;
+}
+
+.review-text-rating {
+    font-family: Helvetica;
+    font-size: 13px;
+    color: #0076FF;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.mh-30 {
+    height: 35px !important;
+
+}
+
+.hide-617-mobile {
+
+    display: none;
+
+}
+
+.card-header-top-style {
+    background: #F5F5F5;
+    border: 1px solid #DCDCDC;
+    border-radius: 1px 0 0 0;
+    color: rgba(0, 0, 0, 0.87);
+    text-align: center;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 17.6px;
+    line-height: 24px;
+}
+
+.rounded-0 {
+
+    border-radius: 0 !important;
+}
+
+.merchant-img-card-sidebar {
+
+    max-width: 50px !important;
+    height: auto;
+
+}
+
+.get-offer-btn {
+
+    width: 160px;
+    height: 36px;
+}
+
+.sidebar-rating-font {
+    color: #333333;
+    text-align: center;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 23px;
+    color: #333333;
+    text-align: center;
+}
+
+.mobile-merchant-card {
+
+    max-height: 190px;
+
+}
+
+.btn-sidebar {
+
+    background: #F4AD31;
+    font-family: 'HelveticaNeue-Medium', sans-serif;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #FFFFFF;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.38);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+}
+
+.btn-sidebar:hover {
+    background: #ffc107 !important;
+    transition: .2s ease-out;
+    border-color: #ffc107;
+}
+
+.breadcrumb {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 12px;
+    color: #666666;
+    text-align: center;
+}
+
+.list-font {
+
+    font-family: Helvetica !important;
+    font-size: 14px !important;
+    color: #333333 !important;
+    border-radius: 0 !important;
+
+}
+
+.sidebar-list-font {
+
+    font-family: HelveticaNeue-Medium;
+    font-size: 15px;
+    color: #333333;
+}
+
+.card-footer {
+    height: 77px !important;
+
+}
+
+
+
+.btn-width-95 {
+    width: 97px;
+}
+
+.mw-300 {
+
+    max-width: 300px;
+
+}
+
+.btn {
+    border-radius: 0 !important;
+
+}
+
+.arrow-font-size {
+    font-size: 14px !important;
+}
+
+.price-section-font {
+    color: #919da5;
+    text-decoration: line-through !important;
+    font-size: 15px !important;
+    font-family: 'Helvetica', sans-serif !important;
+
+}
+
+p.merchant-content-style {
+
+    font-size: 14px;
+}
+
+.price-section-font-bold {
+
+    color: #27384E;
+    text-align: center;
+    font-size: 19px !important;
+    line-height: 1.1;
+    font-family: 'HelveticaNeue-Medium', sans-serif;
+}
+
+.font-weight-500 {
+    font-family: Helvetica;
+    font-size: 15px;
+    color: #0A86FF;
+    letter-spacing: .3px;
+    text-decoration: underline;
+
+}
+
+.row-h-45 {
+
+    min-height: 60px !important;
+    max-height: 60px !important;
+
+}
+
+.custom-outbox {
+
+    height: 167px;
+}
+
+.custom-outbox:hover {
+    outline: 2px solid #f4ad31;
+    transition: inherit;
+    -webkit-transition: inherit;
+    -moz-transition: .1s !important;
+    -ms-transition: .1s !important;
+    cursor: pointer;
+    -o-transition: .1s !important;
+}
+
+.width-220 {
+
+    width: 220px !important;
+
+}
+
+i.fas.fa-angle-double-right-mobile-visit-site {
+    margin-top: -18px;
+}
+
+
+.fa-angle-double-right-desktop-icon-callout::before {
+    content: "\f101" !important;
+    position: relative;
+    right: -192px !important;
+    top: 39px !important;
+    color: #fafafa !important;
+    text-shadow: 1px 1px 1px #999 !important;
+    font-size: 19px !important;
+}
+
+
+.custom-outlink-btn {
+
+    width: 249px;
+    font-family: 'HelveticaNeue-Medium', sans-serif;
+    font-size: 20px !important;
+    color: #FFFFFF;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.50);
+    height: 57px;
+}
+
+.image-card-sidebar {
+
+    max-width: 50px;
+    min-width: 50px;
+
+}
+
+.fa-angle-double-right::before {
+    content: "\f101" !important;
+    position: relative !important;
+    right: -49px !important;
+    top: 28px !important;
+    color: #fafafa !important;
+    text-shadow: 1px 1px 1px #999 !important;
+    font-size: 15px !important;
+}
+
+.fa-angle-double-right-offer::before {
+    content: "\f101" !important;
+    position: relative !important;
+    right: -144px !important;
+    top: 2px !important;
+    color: #fafafa !important;
+    text-shadow: 1px 1px 1px #999 !important;
+    font-size: 15px !important;
+}
+
+.fa-angle-double-right-mobile-icon::before {
+    content: "\f101" !important;
+    position: relative !important;
+    right: -179px !important;
+    top: 30px !important;
+    color: #fafafa !important;
+    text-shadow: 1px 1px 1px #999 !important;
+    font-size: 15px !important;
+}
+
+.fa-angle-double-right-desktop-icon::before {
+
+    content: "\f101" !important;
+    position: relative !important;
+    right: -141px !important;
+    top: 2px !important;
+    color: #fafafa !important;
+    text-shadow: 1px 1px 1px #999 !important;
+    font-size: 15px !important;
+}
+
+.fa-angle-double-right-desktop-visit-site::before {
+
+
+    content: "\f101" !important;
+    position: relative !important;
+    right: -50px !important;
+    top: 22px !important;
+    color: #fafafa !important;
+    text-shadow: 1px 1px 1px #999 !important;
+    font-size: 15px !important;
+    line-height: .5 !important;
+}
+
+.fa-angle-double-right-mobile-visit-site::before {
+
+    content: "\f101" !important;
+    position: relative !important;
+    right: -46px !important;
+    top: 34px !important;
+    color: #fafafa !important;
+    text-shadow: 1px 1px 1px #999 !important;
+    font-size: 15px !important;
+    line-height: .5;
+
+}
+
+
+.fa-angle-double-right-desktop-icon-sidebar::before {
+
+
+    content: "\f101" !important;
+    position: relative !important;
+    right: -92px !important;
+    top: 1px !important;
+    color: #fafafa !important;
+    text-shadow: 1px 1px 1px #999 !important;
+    font-size: 12px !important;
+    line-height: .5;
+
+}
+
+.w-249 {
+
+    width: 249px;
+    max-width: 249px;
+
+}
+
+i.fas.fa-angle-double-right-desktop-visit-site {
+
+    line-height: .5;
+}
+
+.ad_disclosure {
+
+    font-size: 11px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.card-header-height {
+    min-height: 36px;
+    max-height: 40px;
+}
+
+span.bullet-item,
+.bullet-item {
+    letter-spacing: 4px;
+}
+
+.show-625 {
+
+    display: none;
+}
+
+.sidebar {
+
+    width: 295px !important;
+    max-width: 295px !important;
+
+}
+
+
+.list-link {
+
+    font-weight: 400 !important;
+    font-size: 18px;
+
+}
+
+.merchant-img-outbox-logo {
+    max-width: 80px;
+    max-height: 100px;
+    display: block;
+}
+
+.merchant-card-container.hide {
+
+    display: none;
+
+}
+
+.adv-rating-wrapper {
+
+    max-width: 160px;
+
+}
+
+.tablet-row {
+    display: none;
+}
+
+.show-767 {
+    display: none;
+}
+
+.vist_btn:hover {
+    background: #FFC107 !important;
+    transition: .2s ease-out;
+    border-color: #f6ae20 !important;
+}
+
+.merchant-box-mobile-only {
+
+    display: none;
+
+}
+
+.mobile-card-outline {
+    width: 300px;
+}
+
+
+.mobile-card-outline:hover {
+
+    outline: 2px solid #f4ad31;
+    transition: inherit;
+    -webkit-transition: inherit;
+    -moz-transition: .1s !important;
+    -ms-transition: .1s !important;
+    cursor: pointer;
+    -o-transition: .1s !important;
+    width: 300px;
+}
+
+.rankings_text {
+
+    color: #007bff;
+    font-family: 'Helvetica', sans-serif;
+    text-align: right;
+    font-size: 10px;
+    line-height: 11px
+}
+
+.merchant-link-text {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 15px;
+    color: #0A86FF;
+    letter-spacing: .2px;
+    text-decoration: underline;
+}
+
+a.merchant-link-text {
+
+    font-family: 'Helvetica', sans-serif !important;
+    font-size: 15px !important;
+    color: #007bff !important;
+    text-decoration: underline !important;
+    letter-spacing: inherit !important;
+    font-weight: 400 !important;
+    line-height: inherit !important;
+
+}
+
+.container-new {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.flex-grid {
+    display: flex;
+    margin: auto -1rem 1rem;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+.main {
+    flex: 3;
+}
+
+.mr-icon-em {
+
+    margin-right: .8975em;
+}
+
+nav.mh-24 {
+
+    max-height: 24px !important;
+
+}
+
+
+@media (max-width:625px) {
+
+    .hidden-625 {
+
+        display: none !important;
+
+    }
+
+}
+
+
+@media (max-width:626px) {
+
+    .show-626 {
+
+        display: block !important;
+        flex-direction: column !important;
+        align-self: start !important;
+
+    }
+
+}
+
+
+@media (max-width:625px) {
+
+    .show-625.col-md-4 {
+
+        display: none !important;
+    }
+
+}
+
+@media (max-width:1119px) {
+
+    .hide-1119px {
+
+        display: none !important;
+    }
+}
+
+@media (max-width:625px) {
+
+    .show-625 {
+
+        display: flex !important;
+        flex-direction: row !important;
+
+    }
+
+}
+
+@media (max-width:625px) {
+
+    .mobile-list,
+    .hide-617-mobile {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+@media (max-width:625px) {
+
+    .mobile-bg-gray {
+
+        background-color: #fafafa !important;
+        border-top: 1px solid #dee2e6 !important;
+        border-bottom: 1px solid #dee2e6 !important;
+
+    }
+
+}
+
+@media (max-width:767px) {
+
+    .show-767 {
+
+        display: flex !important;
+        flex-direction: row !important;
+    }
+}
+
+@media (max-width:767px) {
+
+    .merchant-image-container {
+
+        display: none;
+
+    }
+}
+
+@media (max-width:625px) {
+    .ad-disclosure-hide.col-md-4 {
+
+        display: none !important;
+
+    }
+}
+
+@media (max-width:767px) {
+    .ad-disclosure-hide {
+
+        display: none;
+
+    }
+}
+
+@media (max-width:1120px) {
+    .merchant-sidebar-desktop {
+
+        display: none;
+
+    }
+}
+
+@media (max-width:768px) {
+
+    .hide-768-tablet {
+        display: none !important;
+    }
+}
+
+
+
+@media (max-width:767px) {
+
+    .hide-767 {
+        display: none !important;
+    }
+}
+
+@media (max-width:767px) {
+
+    .custom-outbox {
+        display: none !important;
+    }
+}
+
+
+
+
+@media (max-width:767px) {
+
+    .merchant-box-mobile-only {
+        display: flex !important;
+        flex-direction: row;
+    }
+}
+
+
+@media (max-width:1023px) {
+    .tablet-row {
+
+        display: block !important;
+    }
+
+}
+
+@media (max-width:828px) {
+
+    .hide-828 {
+        display: none !important;
+    }
+}
+
+@media (max-width:625px) {
+
+    .merchant-card-container.hide {
+
+        display: block;
+
+
+
+    }
+
+}
+
+@media (max-width:625px) {
+
+    .hide-mobile-617 {
+
+        display: flex !important;
+        flex-direction: column !important;
+
+    }
+}
+
+@media (max-width:625px) {
+
+    .hide-625.list-group {
+
+        display: none !important;
+
+    }
+
+}
+
+
+.hide-617-mobile.list-group {
+
+    display: block !important;
+
+}
+}
+
+@media (max-width:625px) {
+
+    .merchant-mobile-card {
+
+        display: none !important;
+    }
+
+}
+
+@media (max-width:625px) {
+
+    .merchant-card-container {
+        display: none !important;
+
+    }
+
+}
+
+@media (max-width:625px) {
+
+    .width-50 {
+        width: 100% !important;
+
+    }
+
+}
+
+@media (max-width:1128px) {
+
+    .merchant-sidebar-desktop-1128 {
+
+        display: none;
+    }
+}
+
+@media (max-width:1023px) {
+
+    .hide-1023 {
+
+        display: none !important;
+    }
+}
+
+@media (max-width:1024px) {
+
+    .hide-1024 {
+
+        display: none !important;
+
+    }
+}
+
+@media(max-width:625px) {
+
+    .sitelinks-padding-mobile {
+
+        padding-left: 15px;
+
+        padding-right: 15px;
+    }
+
+}
+    
+    @media(max-width:625px) {
+
+    .main {
+
+        padding-left: 0;
+
+        padding-right: 0;
+    }
+
+}
+   
+  </style>
+  <link rel="stylesheet" href="https://d33wubrfki0l68.cloudfront.net/js/adc83b19e793491b1c6ea0fd8b46cd9f32e592fc/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
+</head>
+
+<body class="content d-flex flex-column overflow-hidden">
+  <div class="pt-3 pb-0">
+    <div class="container-fluid container-new">
+      <div class="row d-flex flex-row justify-content-between">
+        <div class="col-md-8 col-12 d-flex flex-column  py-0 my-0 align-self-start px-2">
+          <nav aria-label="breadcrumb" class="mh-24">
+            <ol class="breadcrumb bg-white my-0 py-0 px-0 w-100">
+              <li class="breadcrumb-item"><a class="text-muted" href="#">Home</a></li>
+              <li class="breadcrumb-item "><a class="text-muted" href="#">Top 10 Meal Delivery </a></li>
+              <li class="breadcrumb-item active" aria-current="page">HelloFresh Review</li>
+            </ol>
+          </nav>
+        </div>
+        <div class="show-625 show-626 col-md-4 d-flex flex-column text-right align-self-start px-2">
+          <div class="show-626 my-0 py-0 mh-30 mb-1 align-top">
+            <div class="d-flex d-inline text-primary mt-0 px-0 float-right mobile-ad-disclosure mobile-ad-description-links mb-2 mt-0 flex-column align-top"><span class="mx-2 d-flex flex-column align-self-start py-0 my-0"><a class="ad_disclosure align-top" href="#exampleModalCenter" data-toggle="modal" data-target="#exampleModalCenter">Advertiser disclosure</a></span><span class=" mx-2 px-auto d-inline-flex d-flex flex-column text-primary my-0 "><a href="#exampleModalCenter2" data-toggle="modal" data-target="#exampleModalCenter2" class="rankings_text align-top">About our rankings</a></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-------START-CONTAINER------->
+  <div class="container-new d-flex flex-column w-100 container-fluid">
+    <div class="row flex-grid d-flex flex-row-reverse">
+      <!-------FLEXBOX--SIDEBAR------->
+      <div class="hide-1023 row mx-2">
+        <aside class="col px-0 col-12 sidebar d-flex flex-column align-items-center">
+          <div class="d-flex flex-column align-items-center justify-content-center">
+            <div class="d-flex flex-column mb-auto merchant-sidebar-desktop-1128 merchant-sidebar-desktop card merchant-sidebar shadow-sm rounded-0">
+              <div class="merchant-sidebar-destkop-1128 card-header text-center card-header-top-style rounded-none rounded-0"> Top 5 Meal Delivery</div>
+              <div class="card-body pb-0 px-0 pt-0">
+                <div class="d-flex flex-row mb-0 justify-content-center w-100 border-bottom py-2 row-h-45 align-items-center">
+                  <div class="bd-highlight d-flex flex-column align-self-center"><img src="https://res.cloudinary.com/nkh/image/upload/c_scale,w_51/v1567195865/merchant-logo.png" class="mx-2 merchant-img-card-sidebar" width="50"></div>
+                  <div class="p-2 sidebar-rating-font d-flex flex-column align-self-center">9.8</div>
+                  <div class="p-2 bd-highlight">
+                    <i class="fas fa-angle-double-right-desktop-icon-sidebar">
+                      <div class="btn btn-secondary btn-sidebar mh-30 btn-width-95"><span class="mr-icon-em"> Visit Site </span></div>
+                    </i></div>
+                </div>
+                <div class="d-flex flex-row mb-0 justify-content-center w-100 border-bottom py-2 row-h-45 align-items-center">
+                  <div class="bd-highlight d-flex flex-column align-self-center"><img src="https://res.cloudinary.com/nkh/image/upload/dpr_2.0,q_auto:best,z_2/v1568750333/gm4d5gyj9kkzcossokzc.png" class="mx-2  merchant-img-card-sidebar" width="50"></div>
+                  <div class="p-2 sidebar-rating-font d-flex flex-column align-self-center">9.8</div>
+                  <div class="p-2 bd-highlight">
+                    <i class="fas fa-angle-double-right-desktop-icon-sidebar">
+                      <div class="btn-width-95 btn btn-secondary btn-sidebar mh-30"><span class="mr-icon-em"> Visit Site </span> </div>
+                    </i></div>
+                </div>
+                <div class="d-flex flex-row  mb-0 justify-content-center w-100 border-bottom py-2 row-h-45 align-items-center">
+                  <div class="bd-highlight d-flex flex-column align-self-center"><img src="https://res.cloudinary.com/nkh/image/upload/v1568747788/blue_apron_bg_merchant.png" class="mx-2  merchant-img-card-sidebar" width="50"></div>
+                  <div class="p-2 sidebar-rating-font d-flex flex-column align-self-center">9.8</div>
+                  <div class="p-2 bd-highlight">
+                    <i class="fas fa-angle-double-right-desktop-icon-sidebar">
+                      <div class="btn btn-secondary btn-sidebar mh-30 btn-width-95"><span class="mr-icon-em"> Visit Site </span></div>
+                    </i> </div>
+                </div>
+                <div class="d-flex flex-row mb-0 justify-content-center py-2 row-h-45 border-bottom align-items-center">
+                  <div class=" d-flex flex-column align-self-center"><img src="https://res.cloudinary.com/nkh/image/upload/dpr_3.0,q_auto:best,z_2/v1568747902/sunbasket_bg_merchant.png" class="mx-2  merchant-img-card-sidebar" width="50"></div>
+                  <div class="p-2 sidebar-rating-font d-flex flex-column align-self-center">9.8</div>
+                  <div class="p-2">
+                    <i class="fas fa-angle-double-right-desktop-icon-sidebar">
+                      <div class="btn btn-secondary btn-sidebar mh-30 btn-width-95"><span class="mr-icon-em"> Visit Site </span></div>
+                    </i> </div>
+                </div>
+                <div class="d-flex flex-row mb-0 justify-content-center py-2 row-h-45 align-items-center">
+                  <div class=" d-flex flex-column align-self-center"><img src="https://res.cloudinary.com/nkh/image/upload/g_center,q_auto/v1568747963/diet_to_go_bg_merchant.png" class="mx-2  merchant-img-card-sidebar" width="50"></div>
+                  <div class="p-2 sidebar-rating-font d-flex flex-column align-self-center">9.8</div>
+                  <div class="p-2">
+                    <i class="fas fa-angle-double-right-desktop-icon-sidebar">
+                      <div class="btn btn-secondary btn-sidebar mh-30 btn-width-95"><span class="mr-icon-em"> Visit Site </span></div>
+                    </i> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column mb-auto merchant-sidebar-destktop-1128 card merchant-sidebar mt-3 shadow-sm rounded-0 merchant-sidebar-desktop">
+            <div class="card-header text-center card-header-top-style rounded-none rounded-0"> HelloFresh Highlights</div>
+            <div class="card-body p-0 h-25" style="">
+              <div class="d-flex flex-row  w-100 border-bottom px-1 justify-content-left py-2 row-h-45 align-items-center">
+                <div class="pl-1 pr-2 d-flex flex-column align-self-center">
+                  <div class="green-check-img">
+                  </div>
+                </div>
+                <div class="d-flex flex-row py-0 my-0 justify-content-left"><span class="sidebar-list-font text-center w-100 py-2">Family &amp; Vegetarian-Friendly Options</span></div>
+              </div>
+              <div class="d-flex flex-row  w-100 border-bottom px-1 justify-content-left py-2 row-h-45 align-items-center">
+                <div class="pl-1 pr-2 d-flex flex-column align-self-center">
+                  <div class="green-check-img">
+                  </div>
+                </div>
+                <div class="py-2"><span class="sidebar-list-font text-center w-100 py-2">Ready in as little as 20 minutes</span></div>
+              </div>
+              <div class="d-flex flex-row w-100 border-bottom px-1 justify-content-left py-2 row-h-45 align-items-center">
+                <div class="pl-1 pr-2 d-flex flex-column align-self-center">
+                  <div class="green-check-img">
+                  </div>
+                </div>
+                <div class="py-1 bd-highlight"><span class="sidebar-list-font text-center w-100 py-2">Minimal clean up</span></div>
+              </div>
+              <div class="d-flex flex-row w-100 border-bottom px-1 justify-content-left py-2 row-h-45 align-items-center">
+                <div class="pl-1 pr-2 d-flex flex-column align-self-center">
+                  <div class="green-check-img">
+                  </div>
+                </div>
+                <div class="py-2 bd-highlight"><span class="sidebar-list-font text-center w-100 py-2">Flexible meal scheduling</span></div>
+              </div>
+              <div class="d-flex flex-row  w-100 border-bottom px-1 justify-content-left py-2 row-h-45 align-items-center">
+                <div class="pl-1 pr-2 d-flex flex-column align-self-center">
+                  <div class="green-check-img">
+                  </div>
+                </div>
+                <div class="py-2 "><span class="sidebar-list-font text-center w-100 pb-2">Pre-measured ingredients by recipe</span></div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <section class="col d-flex flex-column main d-flex flex-column w-100 mx-0 px-sm-2">
+        <div class="row d-flex flex-row w-100 justify-content-xl-between justify-content-lg-start justify-content-md-start no-gutters">
+          <div class="d-flex flex-column width-50 mb-auto">
+            <div class="show-625 mb-1 py-0 px-2 pt-3" style="display:none;">
+              <div class="d-flex flex-row pb-0">
+                <div class="px-1 py-0 mb-0">
+                  <h1 class="merchant-title  pb-0 pt-0 text-dark mb-0">HelloFresh Review </h1>
+                </div>
+                <div class="px-1 py-0 mb-0 d-none">
+                  <div class="d-flex flex-column px-0 mx-0">
+                    <div class=" mb-3 text-center  px-3 d-inline-flex mb-auto merchant-coupon ">$80 off</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="show-625 px-1">
+              <div class=" d-flex flex-row mb-2">
+                <div class="px-1 py-1 d-flex"><a class="ad_disclosure px-1" href="#exampleModalCenter" data-toggle="modal" data-target="#exampleModalCenter" style="color:#007bff;font-family:'Arial', sans-serif!important;font-weight:500!important;">Advertiser disclosure</a></div>
+                <div class="px-1 py-1 d-flex"><a href="#exampleModalCenter2" data-toggle="modal" data-target="#exampleModalCenter2" style="color:#007bff;font-family:'Arial', sans-serif!important;" class="ad_disclosure px-1">About our rankings</a></div>
+                <div class="px-1 py-1 bd-highlight text-primary d-flex"><a href="#" class="ad_disclosure px-1">$80 off</a></div>
+              </div>
+            </div>
+            <div class="list-group mb-0 pb-0">
+              <div class="d-flex flex-column detail_tex d-inline detail_custom border-bottom">
+                <div class="mobile-merchant-card d-flex flex-column mx-auto">
+                  <div class="card text-center merchant-card-container hide rounded-0 mb-2 border-0">
+                    <div class="card-header py-1 bg-white border-0"><img class="img-fluid d-block mx-auto merchant-img-logo " src="https://cdn.buyersguide.org/images/053/reviewmerchant_350_hellofresh-logo (1).png"> </div>
+                    <div class="py-1 border-0">
+                      <!--<h4 class="card-title text-dark text-center card-header-size mt-1" >Top Meal Delivery</h4>-->
+                      <div class="rating d-flex flex-column">
+                        <div class="merchant-rating d-flex flex-column justify-content-center mh-30">9.8</div>
+                      </div>
+                      <div class="adv-rating-wrapper d-inline">
+                        <div class="stars-wrapper outlink my-0 d-inline px-xs-mobile-padding " data-rank="0" data-slug="meal-delivery/green-chef?template=meal-delivery-l6-new" data-element-type="vertical-advrating" data-element-id="696" data-actual-rating="4.8">
+                          <!-- Filled stars -->
+                          <i class="fas fa-star user-rating filled rating-yellow" id="696-star-rating-1" style=""></i>
+                          <i class="fas fa-star user-rating filled rating-yellow" id="696-star-rating-2" style=""></i>
+                          <i class="fas fa-star user-rating filled rating-yellow" id="696-star-rating-3"></i>
+                          <i class="fas fa-star user-rating filled rating-yellow" id="696-star-rating-4"></i>
+                          <!-- Rounded stars -->
+                          <i class="fas fa-star user-rating filled rating-yellow" id="696-star-rating-5"></i>
+                          <!-- Empty stars -->
+                          <br><span style="display: inline-block!important;" class="review-text-rating" data-rank="0" data-slug="meal-delivery/green-chef?template=meal-delivery-l6-new" data-element-type="vertical-customerreviews" data-element-id="696">(1,390)</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="h-auto rounded-0"><i class="fas fa-angle-double-right-mobile-visit-site pt-1"><input class="vist_btn outlink btn btn-secondary mt-2 btn-block px-5 mh-30" type="button" value="Visit Site" data-slug="meal-delivery/hellofresh?template=meal-delivery" name="" data-element-type="merchant-visit" data-element-id="350"></i></div>
+                  </div>
+                </div>
+                <div class="d-flex flex-row pb-1 hidden-625">
+                  <div class="py-0 mb-0 mw-300">
+                    <h1 class="merchant-title  pb-0 pt-0 text-dark">HelloFresh Review </h1>
+                  </div>
+                  <div class="px-1 py-0 mb-0">
+                    <div class="d-flex flex-column px-0 mx-0">
+                      <div class="mb-3 text-center  px-3 d-inline-flex mb-auto merchant-coupon">$80 off</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="custom_header">
+                  <ul class="hide-625 list-group text-dark">
+                    <li class="list-unstyled"> <span class="mr-2"><img src="https://res.cloudinary.com/nkh/image/upload/v1558479878/check-svg.svg" height="20" width="16" class="img-fluid pr"></span>Fresh, sustainable ingredients</li>
+                    <li class="list-unstyled"> <span class="mr-2"><img src="https://res.cloudinary.com/nkh/image/upload/v1558479878/check-svg.svg" height="20" width="16" class="img-fluid"></span>Cook in 30 minutes or less</li>
+                    <li class="list-unstyled"> <span class="mr-2"><img src="https://res.cloudinary.com/nkh/image/upload/v1558479878/check-svg.svg" height="20" width="16" class="img-fluid"></span>Up to 20 recipe choices each week </li>
+                    <li class="list-unstyled"> <span class="mr-2"><img src="https://res.cloudinary.com/nkh/image/upload/v1558479878/check-svg.svg" height="20" width="16" class="img-fluid"></span>Keto, low carb, paleo options</li>
+                    <li class="list-unstyled"> <span class="mr-2"><img src="https://res.cloudinary.com/nkh/image/upload/v1558479878/check-svg.svg" height="20" width="16" class="img-fluid"></span>Skip or cancel anytime </li>
+                  </ul>
+                </div>
+                <div class="mobile-bg-gray">
+                  <div class="d-flex flex-row w-100 align-items-center justify-content-around mb-1 pt-3">
+                    <div class="p-2">
+                      <div class="price_section mt-0 d-flex flex-column justify-content-center text-center" data-price="$5.66">
+                        <div class="price-section-font d-inline"> $8.99 </div>
+                        <div class="price-section-font-bold font-weight-bold"> $5.66 </div>
+                      </div>
+                    </div>
+                    <div class="p-2 btn-container-desktop">
+                      <i class="fas fa-angle-double-right-desktop-icon">
+                        <div class="vist_btn outlink btn btn-secondary  get-offer-btn"><span class="mr-2">Get Offer</span> </div>
+                      </i>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                </div>
+              </div>
+              <div class="mobile-list">
+                <div class="hide-617-mobile show-mobile-list p-0">
+                  <div class="custom_header">
+                    <ul class=" list-group">
+                      <li class="list-unstyled list-font"> <span class="mr-2"><img src="https://res.cloudinary.com/nkh/image/upload/v1558479878/check-svg.svg" height="20" width="16" class="img-fluid pr"></span>Fresh, sustainable ingredients</li>
+                      <li class="list-unstyled list-font"> <span class="mr-2"><img src="https://res.cloudinary.com/nkh/image/upload/v1558479878/check-svg.svg" height="20" width="16" class="img-fluid"></span>Cook in 30 minutes or less</li>
+                      <li class="list-unstyled"> <span class="mr-2"><img src="https://res.cloudinary.com/nkh/image/upload/v1558479878/check-svg.svg" height="20" width="16" class="img-fluid"></span>Up to 20 recipe choices each week</li>
+                      <li class="list-unstyled"> <span class="mr-2"><img src="https://res.cloudinary.com/nkh/image/upload/v1558479878/check-svg.svg" height="20" width="16" class="img-fluid"></span>Keto, low carb, paleo options</li>
+                      <li class="list-unstyled"> <span class="mr-2"><img src="https://res.cloudinary.com/nkh/image/upload/v1558479878/check-svg.svg" height="20" width="16" class="img-fluid"></span>Skip or cancel anytime</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="sitelinks-padding-mobile 
+ d-flex flex-row mt-2 mb-0 w-100 justify-content-around">
+                <div class="px-1 text-underline font-weight-500 w-auto text-center"><span class="merchant-link-text"><a target="_blank" href="#">All HelloFresh Products</a></span></div>
+                <div class="px-1 text-underline font-weight-500 w-auto text-center"><span class="merchant-link-text"><a target="_blank" href="#">Compare Plans</a></span></div>
+                <div class="px-1 text-underline font-weight-500 w-auto text-center"><span class="merchant-link-text"><a target="_blank" href="#">Monthly Plans</a></span></div><a target="_blank" href="#">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="hide-1119px d-flex flex-column h-25 hide-828"><img class="ml-2 merchant-image-container img-fluid tablet-hidden shadow border" src="https://res.cloudinary.com/nkh/image/upload/c_scale,h_225,w_168/v1567021108/merchantimage_9232_HelloFresh_20Box_20Design.jpg" width="168" height="225"></div>
+          <div class="d-flex flex-column mb-auto pl-md-2 pl-sm-2">
+            <div class="card text-center merchant-card-container rounded-0 rounded-0 shadow-sm">
+              <div class="card-header-height card-header border-bottom py-1 bg-white"><img class="img-fluid d-block mx-auto merchant-img-logo " src="https://cdn.buyersguide.org/images/053/reviewmerchant_350_hellofresh-logo (1).png"> </div>
+              <div class="py-1 d-flex flex-column align-items-center justify-content-center">
+                <h4 class="card-title text-dark text-center card-header-size mb-0 text-center w-100 d-flex flex-row justify-content-center align-items-center">Top Meal Delivery</h4>
+                <div class="rating d-flex flex-column">
+                  <div class="merchant-rating d-flex flex-column justify-content-center mh-30">9.8</div>
+                </div>
+                <div class="adv-rating-wrapper d-inline">
+                  <div class="stars-wrapper outlink my-0 d-inline px-xs-mobile-padding " data-rank="0" data-slug="meal-delivery/green-chef?template=meal-delivery-l6-new" data-element-type="vertical-advrating" data-element-id="696" data-actual-rating="4.8">
+                    <!-- Filled stars -->
+                    <i class="fas fa-star user-rating filled rating-yellow" id="696-star-rating-1" style=""></i>
+                    <i class="fas fa-star user-rating filled rating-yellow" id="696-star-rating-2" style=""></i>
+                    <i class="fas fa-star user-rating filled rating-yellow" id="696-star-rating-3" style=""></i>
+                    <i class="fas fa-star user-rating filled rating-yellow" id="696-star-rating-4" style=""></i>
+                    <!-- Rounded stars -->
+                    <i class="fas fa-star user-rating filled rating-yellow" id="696-star-rating-5" style=""></i>
+                    <!-- Empty stars -->
+                    <br><span data-rank="0" data-slug="meal-delivery/green-chef?template=meal-delivery-l6-new" data-element-type="vertical-customerreviews" data-element-id="696" class="review-text-rating d-inline-block">(1,390)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer card-bg-gray border-top  border-bottom h-auto rounded-0"><i class="fas fa-angle-double-right-desktop-visit-site"><input class="vist_btn outlink btn btn-secondary mt-0 btn-block pt-1 visit-btn-width" type="button" value="Visit Site" data-slug="meal-delivery/hellofresh?template=meal-delivery" name="" data-element-type="merchant-visit" data-element-id="350"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-bg-gray mt-2">
+          <div class="d-flex flex-column  w-100 container-fluid justify-content-center align-items-center  w-100 px-xl-1 px-lg-1 px-md-1 px-sm-3 ">
+            <div class="row d-flex flex-row w-100 justify-content-between no-gutters">
+              <div class="d-flex flex-column d-flex flex-column col-xl-8 col-lg-8 col-md-12 col-12 w-100 px-0 mt-3 px-0 mt-3 merchant-content-style">
+                <h1 class="merchant-title mb-3 text-dark">HelloFresh Review </h1>
+                <p class="text-body text-body-style"> Whether you’re a <a class="merchant-link-text">blossoming chef</a>&nbsp;or you want to take the grocery store out of your cooking routine, meal delivery plans like HelloFresh can give you the confidence and time to create recipes you’re excited to share. Sitting at the perfect intersection of affordable pricing, high-quality ingredients, and large portion sizes, HelloFresh has earned a top ranking on our&nbsp;list of food prep options. Easy-to-follow recipe cards guide you through your cooking, so even if you're new to cooking, you can tackle delicious cuisines in no time. Say hello to your&nbsp;inner chef as soon as you open your first HelloFresh box. </p>
+                <img src="https://res.cloudinary.com/nkh/image/upload/q_auto/v1568084185/merchantimage_9723_HelloFresh_20Photo_205.jpg" data-image="yb4bu47fx4k3" width="801.3377483443708" class="d-block img-fluid my-3 shadow mx-auto merchant-content-img" height="602">
+                <h2 class="text-body merchant-title"><a target="_blank" href="#"></a><a name="Heading1">Scheduling Meal Deliveries</a><br></h2>
+                <p class="text-body"> Set up an account with HelloFresh, and from there you can pick exactly which recipes you want on any given week. After you get your account set up, you can easily skip or cancel your subscription if needed. Not feeling next week's recipes? Going out of town? Simply put your subscription on pause until whenever you're ready for more delicious HelloFresh meals. In order to make an account, you simply need to input your email address. After logging in, you'll have the freedom to peruse the site, check out the cookbook, see what the wine pairing is all about, and more. You can choose your weekly recipes from over 20 omnivore options. Vegetarian users have a more limited selection with only have 3 recipes to choose from. While these are all delicious options, this is more limited in scope than other vegetarian-centric meal delivery services. For added convenience, you can even download the HelloFresh app on your phone for handheld access to your delivery schedule. </p>
+              </div>
+              <div class="hide-1023 d-flex flex-column mt-3 h-25 hide-768-tablet">
+                <div class="d-flex flex-column"><img class="ml-2  merchant-image-container img-fluid tablet-hidden shadow border" src="https://res.cloudinary.com/nkh/image/upload/v1568824834/xrt5ykjrrmg9ib6o8vku.jpg" width="168" height="225"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="pt-0">
+    <div class="container-fluid d-flex flex-column w-100 px-0 container-new">
+      <!--<div class="row d-flex flex-row" >
+        <div class="d-flex flex-column w-auto justify-content-center">
+          <section class="content">
+            <div class="container merchant-container" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+              <meta itemprop="author" content="BuyersGuide.org">
+              <div class="merchant">
+             
+                <div class="merchant_top clearfix">
+                  <div class="merchant_listoutr clearfix">
+                    <div class="listing_left" itemprop="reviewBody">
+                      <div class="clearfix">
+                   
+                        <div class="" itemprop="reviewBody">
+                          <div class="recommend">
+                            <p>HelloFresh is recommended in the following categories:</p>
+                            <span>
+                              <a href="/meal-delivery"> Best Meal Delivery Services - 2019 Buyer's Guide </a>
+                            </span>
+                          </div>
+                          <div class="list_outr intro clearfix">
+                            <div class="clearfix">
+                              <div class="round_pic grn">
+                                <img alt="" class="img-fluid" src="/bundles/bgmain/images/chat_icon.png?b418e5382c4e30ea8d4711fcabb734d88977bcb3">
+                              </div>
+                              <h4 class="grn_text" itemprop="description">HelloFresh Review</h4>
+                            </div>
+                            <div class="detail_text custom_content">
+                              <figure><img data-image="yb4bu47fx4k3" width="400" class="img-fluid" src="https://s3.amazonaws.com/static.thecoupon.co/images/3279/merchantimage_9723_HelloFresh%20Photo%205.jpg"></figure>
+                              <h2><br>Pros:</h2>
+                              <ul>
+                                <li class="list-unstyled list-font">Pre-portioned, pre-measured meals so no ingredients go to waste</li>
+                                <li>Save time and money with recipes delivered to your door</li>
+                                <li>Choose from over 20 different recipes each week</li>
+                                <li>Large portion sizes at an affordable price </li>
+                                <li>Easy-to-follow recipe cards with pictures included for every meal</li>
+                                <li>You can pick from Classic, Veggie, and Family Plans</li>
+                              </ul>
+                              <h2><br>Cons:</h2>
+                              <ul>
+                                <li>No vegan, gluten-free, or diet&nbsp;plans available</li>
+                                <li>Limited menu options for vegetarian plan</li>
+                                <li>Shipping is $6.99 after the first week's order</li>
+                              </ul>
+                              <h2><br>Complete Review of HelloFresh</h2>
+                              <p>It can be difficult to put together a dish that properly combines both flavor and nutrition,&nbsp;but&nbsp;HelloFresh does this and more. Each recipe is chef-crafted and tested over 45 times to ensure that it tastes delicious and is the source of joy at every dinner table.&nbsp;Throughout their tenure as a trusted meal delivery service, they've&nbsp;stood by their mission of&nbsp;only using fresh, sustainably sourced ingredients and seasonal produce for their meal delivery service. Whether you're cooking for just yourself or you have a family of picky eaters, HelloFresh lets you be the hero of dinner.</p>
+                              <p>Feeling like you want to keep pursuing some adventurous dishes?&nbsp;HelloFresh provides a whole archive of favorite recipes featuring quick-access categories like Kid-Approved to a huge variety of&nbsp;international flavors.&nbsp;With the guidance of HelloFresh, you'll discover&nbsp;a newfound love for the culinary arts</p>
+                              <p>Focusing on pricing details, HelloFresh presents affordable options for both families and individuals. Their most popular Classic Plan includes a variety of hand-picked vegetables, high-quality proteins, and balanced grains to create well-rounded meals. Everything is pre-measured and delivered to your home in an insulated, eco-friendly package to ensure freshness. You can choose servings for either 2 or 4 people, and you can receive 2, 3, or 4 meals per week. The cost per serving for 3-4 meals a week is $8.99 (before discount), while 2 meals a week will get you a price of $9.99 per serving.&nbsp;</p>
+                              <p>Vegetarians can select the Veggie Meal Plan, which serves 2 or 4 people with 2 or 3 recipes per week. Each delivery brings&nbsp;an abundance of fresh produce, plant-based proteins, and hearty grains to your door. The price for a veggie plan is slightly lower than the classic, taking into consideration the absence of meat into their pricing plan. For 2 people, you'll see each serving come out to $8.99; that price improves to $6.99 per serving if you feed 4 people. Since portion sizes are generous, you can likely create leftovers with each dinner.&nbsp;</p>
+                              <p>The HelloFresh Family Meal Plan is a great option for families, especially for kids who tend to avoid vegetables. Each recipe is intended for 4 people, and you can choose to have either 2 or 3 meals delivered every week. At $7.49 per serving (before discount), it's an affordable and healthier alternative to eating out every week. Plus, with added spices and unique flavors, your kids won't even know they're enjoying a healthy, veggie-filled dinner.&nbsp;</p>
+                              <p>Shipping is a flat rate of $6.99, no matter the plan nor the&nbsp;amount of servings you order. </p>
+                              <h2>
+                                <figure><img src="https://s3.amazonaws.com/static.thecoupon.co/images/2329/merchantimage_9232_HelloFresh%20Box%20Design.jpg" data-image="83xzht6oy9bq" width="400"></figure>
+                              </h2>
+                              <p></p>
+                              <p></p>
+                              <h2>Jump To:<br></h2>
+                              <p><br>
+                              </p>
+                              <ul>
+                                <li><a href="#Heading1">Scheduling Meal Deliveries</a></li>
+                                <li><a href="#Heading2">HelloFresh Special Diets</a></li>
+                                <li><a href="#Heading3">Recyclable Packaging Materials</a></li>
+                                <li><a href="#Heading4">Wine Pairings and Deals of the Week</a></li>
+                                <li><a href="#Heading5">HelloFresh Cost</a></li>
+                                <li><a href="#Heading6">Compare HelloFresh to Top Meal Delivery Competitors</a>
+                                  <ul>
+                                    <li><a href="#Subheading1">HelloFresh vs. Blue Apron</a></li>
+                                    <li><a href="#Subheading2">HelloFresh vs. Sun Basket</a></li>
+                                    <li><a href="#Subheading3">HelloFresh vs. Green Chef</a></li>
+                                  </ul>
+                                </li>
+                                <li><a href="#Heading8">HelloFresh Buyer’s Guide<br></a></li>
+                              </ul>
+                              <h2><a name="Heading1"><br></a></h2>
+                              <h2><a name="Heading1">Scheduling Meal Deliveries</a><br></h2>
+                              <p>Set up an account with HelloFresh, and from there you can pick exactly which recipes you want on any given week. After you get your account set up, you can easily skip or cancel your subscription if needed. Not feeling next week's recipes? Going out of town?&nbsp;Simply put your subscription on pause until whenever you're ready for more delicious HelloFresh meals.</p>
+                              <p>In order to make an account, you simply need to input your email address. After logging in, you'll have the freedom to peruse the site, check out the cookbook, see what the wine pairing is all about, and more. You can choose your weekly recipes from over 20 omnivore options. Vegetarian users have a more limited selection with only have 3 recipes to choose from. While these are all delicious options, this is more limited in scope than other vegetarian-centric meal delivery services.</p>
+                              <p>For added convenience, you can even download the HelloFresh app on your phone for handheld access to your delivery schedule.<br></p>
+                              <figure><img src="https://s3.amazonaws.com/static.thecoupon.co/images/8793/merchantimage_3978_HelloFresh%20Photo%203.jpg" data-image="axj5y45d4maa" class="img-fluid" width="400"></figure>
+                              <p></p>
+                              <h2><a name="Heading2">HelloFresh Special Diets</a></h2>
+                              <p>While a vegan diet plan isn’t available for HelloFresh, you do have the option to exchange any of the included ingredients for a vegan option. For example, users can choose a vegetarian option and replace the cheese or milk with vegan cheese or milk. The dairy that is not used can be donated to a local church or food pantry, or you can share it with any roommates or family members that do eat dairy. </p>
+                              <p>The same measure can be taken with any ingredient in a HelloFresh meal, including allergens. However, for severe allergies, please keep in mind that there is no guarantee that cross-contamination did not occur. HelloFresh indicates this on their website, and strongly encourages extra precaution and/or avoidance to keep you safe. </p>
+                              <p>HelloFresh focuses more on classic family dinners and does not place a strong emphasis on diet plans like Keto or Paleo options. You can always customize a recipe to fit your needs, but you should also keep in mind the costs you’re adding to the meal you’ve already purchased. Nutritional information is included with every recipe, both in the box and online. You can adjust your diet accordingly, swapping out any food items that you feel is necessary. Luckily, each recipe is already intended to fit into a classic, balanced diet with quality ingredients. So if you're just looking to eat healthier with no strict dietary guidelines, you won't have to do much adjusting at all.&nbsp;</p>
+                              <h2><a name="Heading3">Recyclable Packaging Materials</a></h2>
+                              <p> HelloFresh is continually revamping their&nbsp;ingredients packaging to be environmentally friendly and sustainable. Because they have portioned their ingredients into perfect sizes for each recipe, this means there are quite a few packages ranging from small baggies for garlic cloves to stay-fresh containers for basil. HelloFresh addresses this in a responsible manner that remains convenient to the consumer. Nearly every part of their packaging — from the refrigerant gel packs to the tiny bottles that hold the balsamic vinegar — can be recycled. <br><br> The company consistently evolves, having upgraded their insulation from recycled fibers wrapped in recyclable plastic to corrugated cardboard that still functions as a strong insulator. This alone makes HelloFresh stand out as a company that is not satisfied with the status quo, and we’re certain they’ll continue to look for ways to incorporate better environmental practices into their meal delivery program.<br></p>
+                              <figure><img src="https://s3.amazonaws.com/static.thecoupon.co/images/81/merchantimage_18_HelloFresh%20Photo2.jpg" data-image="lfgjjxhok3kp" class="img-fluid" width="400"></figure>
+                              <p></p>
+                              <h2><a name="Heading4">Wine Pairings and Deals of the Week </a></h2>
+                              <p>As you use HelloFresh more and more, this meal delivery program rewards its users with free meal coupons that you can share with friends and family, as well as tons of other coupons with its partners. In fact, as you continue to order HelloFresh, you’ll earn free <em>weeks </em>of food that you can share with friends and family. This is especially helpful for anyone who has always depended on others for those home-cooked meals; now is your time to give back to the chefs in your life. </p>
+                              <p>The extras that come along with HelloFresh includes the HelloFresh Wine Club. In the HelloFresh Wine Club, you can pick which bottle pairs best with your favorite HelloFresh recipes, making your meal that much better. Over time, you’ll receive discounts for the wine club too, further motivating you to become a wine aficionado. Set up your own personal vineyard at home with wine facts, tasting notes, and flavor profiles. The HelloFresh Wine Club gives you the opportunity to start learning more about wines in general, setting you up to for success at your next dinner party.&nbsp;<br><br></p>
+                              <figure><img src="https://lh3.googleusercontent.com/JlemoXLdnzZBhULAsBXPWK1p4v62tMgoZIxw8faZ7XMd6OhN7BXuScjYIZTi7l1jngycstC7R6_nWoGdfuud6u6iDsCwp74BGMpaPjatQy2SX99_0_2_FI79W9wQpOLR6Ay7WTTu" data-image="u2c1mbjcq52j" class="img-fluid" width="400"></figure>
+                              <p></p>
+                              <p></p>
+                              <h2><a name="Heading5">HelloFresh Cost</a></h2>
+                              <p>HelloFresh is neither the cheapest nor the most expensive meal delivery program out there, but its wide range of ingredients and flavors, along with an attentive customer service team, makes this meal delivery program the most cost-effective and valuable choice. It does not use basic recipes, which means you’ll always be surprised by the flavors that HelloFresh brings to the table. Nearly every meal can be made in 30 minutes, meaning that you won’t be in over your head with delicious flavor combinations.</p>
+                              <p>We love HelloFresh because of the learning that comes with this meal delivery service, turning amateur cooks into boss broilers, sauté savants, and grain gurus. Each cooking technique that you add to your repertoire adds more and more value to the overall cost of HelloFresh.&nbsp;</p>
+                              <h2><a name="Heading6">Compare HelloFresh to Top Meal Delivery Competitors</a></h2>
+                              <p>Luckily for anyone getting into meal delivery programs, you have choices! HelloFresh isn’t the only competing brand that is both delicious and easy-to-use, and before you really dive into meal delivery, it’s great to see all the options. This is a big reason why HelloFresh offers their introductory discounts so you can get a glimpse into the meal delivery world without making a big investment.<br><br>
+                              </p>
+                              <h3><a name="Subheading1">HelloFresh vs. Blue Apron:</a></h3>
+                              <p>These two meal delivery kits offer unique, delicious recipes and provide vegetarian choices and family plans. Along with that, they’ve both matched up on wine pairing programs, providing monthly wine options if you so choose. Blue Apron sits at a slightly higher price per serving, but you do get a wider range of recipe options and their shipping is free for each box. For both meal delivery kits, the vegetarian options are limited to only 3 choices per week. HelloFresh tends to use soy-free bases for their vegetarian meals, keeping tofu out of their protein arena for a healthier veggie meal.&nbsp;<br>
+                              </p>
+                              <h3><a name="Subheading2">HelloFresh vs. Sun Basket:</a> </h3>
+                              <p>Sun Basket prices their servings a few dollars higher than HelloFresh and their portion sizes are much smaller in comparison. While they offer quality ingredients and appeal to the more health-centric audiences, Sun Basket is certainly not the “bargain” brand. That said, Sun Basket has a much wider variety of dietary choices for gluten-free, paleo, and vegan diners. For anyone with more restrictive diets, you might find more luck with Sun Basket. However, HelloFresh offers up a healthy meal that is more affordable and holds to a balanced, middle-ground diet.&nbsp;<br><br>
+                              </p>
+                              <h3><a name="Subheading3">HelloFresh vs. Green Chef:</a> </h3>
+                              <p>Once again, HelloFresh beats their competitor in pricing, but cannot match the dietary options that Green Chef provides. You can easily select an entire plan focused around your diet, no matter how unique. Green Chef is centered around being a healthy option, but this plan is&nbsp;not necessarily aimed at&nbsp;beginning cooks. These more advanced meals might be daunting for the first-time chef. If this is the case, you should turn to HelloFresh for simple, fresh, healthy, and delicious dinners. <br><br></p>
+                              <figure><img src="https://s3.amazonaws.com/static.thecoupon.co/images/5061/merchantimage_1605_HelloFresh%20Photo1.jpg" data-image="ugy6db2awm17" class="img-fluid" width="400"></figure>
+                              <h2><a name="Heading8">HelloFresh Buyer’s Guide</a></h2>
+                              <p>Since HelloFresh is targeted at both beginner cooks and experienced chefs alike, they draw out the exact meal that you might need for your household. They outline the servings and ingredients that come with each meal before you receive it, as well as the nutritional information that can help you plan out your diet.</p>
+                              <p>HelloFresh has consistently updated their service to ensure their customers are happy and that their feedback is heard. Over the last few weeks, they've introduced&nbsp;two-recipe weeks to their meal plans, adapting to users' needs. This is a prime example of the support team taking time and effort to continuously shape HelloFresh into a progressive, top-quality meal delivery service.&nbsp;</p>
+                              <p>The only thing you need to do now is stock your kitchen with the essentials: salt, pepper, and cooking oil! It also doesn’t hurt to have a sharp chef’s knife and paring knife to make veggie prep easier. Once you stock up on those things, you’re ready to make delicious meals with your newfound love of spices. Start preheating the oven, grab your oven mitts, and dive into the world of cooking with the help of HelloFresh!&nbsp;</p>
+                            </div>
+                            <div class="sitelink_nav">
+                              <ul>
+                                <li>
+                                  <a class="outlink" href="" rel="nofollow" data-slug="meal-delivery/hellofresh/sl/1?template=meal-delivery" data-element-type="merchant-sitelink" data-element-id="1"> Choose a Meal Plan </a>
+                                </li>
+                                <li>
+                                  <a class="outlink" href="" rel="nofollow" data-slug="meal-delivery/hellofresh/sl/2?template=meal-delivery" data-element-type="merchant-sitelink" data-element-id="2"> How It Works </a>
+                                </li>
+                                <li>
+                                  <a class="outlink" href="" rel="nofollow" data-slug="meal-delivery/hellofresh/sl/3?template=meal-delivery" data-element-type="merchant-sitelink" data-element-id="3"> Recipe Archive </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="listing_right">
+                      <div class="highlight_box">
+                        <h5>Advertising Disclosure</h5>
+                        <div class="highlight_part" style="margin-bottom: 15px"> To keep this site free for consumers, we receive compensation for customer referrals. </div>
+                      </div>
+                      <div class="highlight_box">
+                        <h5>HelloFresh Highlights</h5>
+                        <div class="highlight_part">
+                          <div class="highlight_nav">
+                            <ul>
+                              <li>
+                                <a class="outlink" href="" rel="nofollow" data-slug="meal-delivery/hellofresh?template=meal-delivery" data-element-type="merchant-highlight" data-element-id="1"><i class="fa fa-check" aria-hidden="true" style="color: #1e80d4; margin-left: -25px; margin-right: 8px;"></i> Family- &amp; Vegetarian-Friendly Options </a>
+                              </li>
+                              <li>
+                                <a class="outlink" href="" rel="nofollow" data-slug="meal-delivery/hellofresh?template=meal-delivery" data-element-type="merchant-highlight" data-element-id="2"><i class="fa fa-check" aria-hidden="true" style="color: #1e80d4; margin-left: -25px; margin-right: 8px;"></i> Ready in as Little as 20 Minutes </a>
+                              </li>
+                              <li>
+                                <a class="outlink" href="" rel="nofollow" data-slug="meal-delivery/hellofresh?template=meal-delivery" data-element-type="merchant-highlight" data-element-id="3"><i class="fa fa-check" aria-hidden="true" style="color: #1e80d4; margin-left: -25px; margin-right: 8px;"></i> Minimal Clean Up </a>
+                              </li>
+                              <li>
+                                <a class="outlink" href="" rel="nofollow" data-slug="meal-delivery/hellofresh?template=meal-delivery" data-element-type="merchant-highlight" data-element-id="4"><i class="fa fa-check" aria-hidden="true" style="color: #1e80d4; margin-left: -25px; margin-right: 8px;"></i> Flexible Meal Scheduling </a>
+                              </li>
+                              <li>
+                                <a class="outlink" href="" rel="nofollow" data-slug="meal-delivery/hellofresh?template=meal-delivery" data-element-type="merchant-highlight" data-element-id="5"><i class="fa fa-check" aria-hidden="true" style="color: #1e80d4; margin-left: -25px; margin-right: 8px;"></i> Pre-Measured Ingredients Organized by Recipe </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div> 
+          
+          </section>
+        </div>
+      </div>-->
+      <div class="tablet-row">
+        <div class="row d-flex flex-row pb-3 w-100 mx-auto no-gutters px-3">
+          <div class="col d-flex flex-column align-items-center py-3 mb-auto px-3 bg-white">
+            <div class="card  shadow-sm rounded-0 merchant-sidebar">
+              <div class="card-header text-center card-header-top-style rounded-none rounded-0"> Top 5 Meal Delivery</div>
+              <div class="card-body pb-0 px-0 pt-0">
+                <div class="d-flex flex-row bd-highlight mb-0 justify-content-center w-100 border-bottom py-2 row-h-45 align-items-center">
+                  <div class="bd-highlight d-flex flex-column align-self-center"><img src="https://res.cloudinary.com/nkh/image/upload/c_scale,w_51/v1567195865/merchant-logo.png" class="mx-3" width="50"></div>
+                  <div class="p-2 sidebar-rating-font d-flex flex-column align-self-center">9.8</div>
+                  <div class="p-2 bd-highlight">
+                    <div class="btn btn-secondary btn-sidebar mh-30 btn-width-95"> Visit Site</div>
+                  </div>
+                </div>
+                <div class="d-flex flex-row bd-highlight mb-0 justify-content-center w-100 border-bottom py-2 row-h-45 align-items-center">
+                  <div class="bd-highlight d-flex flex-column align-self-center"><img src="https://res.cloudinary.com/nkh/image/upload/c_scale,q_auto:best,w_53/v1567196103/merchant-logo-2.png" class="mx-3" width="50"></div>
+                  <div class="p-2 sidebar-rating-font d-flex flex-column align-self-center">9.8</div>
+                  <div class="p-2 bd-highlight">
+                    <div class="btn btn-secondary btn-sidebar mh-30 btn-width-95"> Visit Site </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-row bd-highlight mb-0 justify-content-center w-100 border-bottom py-2 align-items-center row-h-45">
+                  <div class="bd-highlight d-flex flex-column align-self-center"><img src="https://res.cloudinary.com/nkh/image/upload/c_scale,q_auto:best,w_53/v1567196103/merchant-logo-2.png" class="mx-3" width="50"></div>
+                  <div class="p-2 sidebar-rating-font d-flex flex-column align-self-center">9.8</div>
+                  <div class="p-2">
+                    <div class="btn btn-secondary btn-sidebar mh-30 btn-width-95"> Visit Site</div>
+                  </div>
+                </div>
+                <div class="d-flex flex-row bd-highlight mb-0 justify-content-center w-100 border-bottom py-2 row-h-45 align-items-center">
+                  <div class="bd-highlight d-flex flex-column align-self-center"><img src="https://res.cloudinary.com/nkh/image/upload/c_scale,q_auto:best,w_53/v1567196103/merchant-logo-2.png" class="mx-3" width="50"></div>
+                  <div class="p-2 sidebar-rating-font d-flex flex-column align-self-center">9.8</div>
+                  <div class="p-2">
+                    <div class="btn btn-secondary btn-sidebar mh-30 btn-width-95"> Visit Site</div>
+                  </div>
+                </div>
+                <div class="d-flex flex-row bd-highlight mb-0 justify-content-center w-100 border-bottom py-2 row-h-45 align-items-center">
+                  <div class="bd-highlight d-flex flex-column align-self-center"><img src="https://res.cloudinary.com/nkh/image/upload/c_scale,q_auto:best,w_53/v1567196103/merchant-logo-2.png" class="mx-3" width="50"></div>
+                  <div class="p-2 sidebar-rating-font d-flex flex-column align-self-center">9.8</div>
+                  <div class="p-2 bd-highlight">
+                    <div class="btn btn-secondary btn-sidebar mh-30 btn-width-95"> Visit Site</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex flex-column mb-auto align-items-center align-self-start py-3 px-3">
+            <div class="card merchant-sidebar mt-0 shadow-sm rounded-0">
+              <div class="card-header text-center card-header-top-style rounded-none rounded-0 mt-0">HelloFresh Highlights</div>
+              <div class="card-body pb-0 px-0 pt-0">
+                <div class="d-flex flex-row  w-100 border-bottom px-1 justify-content-left py-2 row-h-45 align-items-center">
+                  <div class="pl-1 pr-2 d-flex flex-column align-self-center">
+                    <div class="green-check-img">
+                    </div>
+                  </div>
+                  <div class="py-2 bd-highlight"><span class="sidebar-list-font text-center w-100 py-2">Ready in as little as 20 minutes</span></div>
+                </div>
+                <div class="d-flex flex-row  w-100 border-bottom px-1 justify-content-left py-2 row-h-45 align-items-center">
+                  <div class="pl-1 pr-2 d-flex flex-column align-self-center">
+                    <div class="green-check-img">
+                    </div>
+                  </div>
+                  <div class="py-1"><span class="sidebar-list-font text-center w-100 py-2">Family &amp; Vegetarian-Friendly Options</span></div>
+                </div>
+                <div class="d-flex flex-row  w-100 border-bottom px-1 justify-content-left py-2 row-h-45 align-items-center">
+                  <div class="pl-1 pr-2 d-flex flex-column align-self-center">
+                    <div class="green-check-img">
+                    </div>
+                  </div>
+                  <div class="py-1"><span class="sidebar-list-font text-center w-100 py-2">Minimal Cleanup</span></div>
+                </div>
+                <div class="d-flex flex-row  w-100 border-bottom px-1 justify-content-left py-2 row-h-45 align-items-center">
+                  <div class="pl-1 pr-2 d-flex flex-column align-self-center">
+                    <div class="green-check-img">
+                    </div>
+                  </div>
+                  <div><span class="sidebar-list-font text-center w-100 py-2">Flexible meal scheduling</span></div>
+                </div>
+                <div class="d-flex flex-row  mb-0 w-100 border-bottom px-1 justify-content-left py-2 row-h-45 align-items-center">
+                  <div class="pl-1 pr-2 d-flex flex-column align-self-center">
+                    <div class="green-check-img">
+                    </div>
+                  </div>
+                  <div><span class="sidebar-list-font text-center w-100 py-2">Pre-measured ingredients by recipe</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="merchant-box-mobile-only row pt-3">
+        <div class="merchant-box-mobile-only mb-3 col-12 w-50 d-flex flex-column justify-content-center align-items-center">
+          <div class="card shadow-sm border rounded-0 mobile-card-outline">
+            <div class="card-body d-flex flex-column mobile-only shadow-sm">
+              <img class="img-fluid mx-auto d-block" src="https://res.cloudinary.com/nkh/image/upload/merchant-logo.png" width="50" height="auto">
+              <ul class="list-group w-100 justify-content-center d-flex flex-column mx-auto mt-3">
+                <li class="list-group-item border-0 my-0 py-2">
+                  <a class="outlink w-100 text-justify list-link" href="" rel="nofollow" data-slug="meal-delivery/hellofresh/sl/1?template=meal-delivery" data-element-type="merchant-sitelink" data-element-id="1" target="_blank"><span class="bullet-item">•</span> Choose a Meal Plan </a>
+                </li>
+                <li class="list-group-item border-0 my-0 py-2">
+                  <a class="outlink text-justify list-link" href="" rel="nofollow" data-slug="meal-delivery/hellofresh/sl/2?template=meal-delivery" data-element-type="merchant-sitelink" data-element-id="2" target="_blank"><span class="bullet-item">•</span> How It Works </a>
+                </li>
+                <li class="list-group-item border-0 py-2 list-link">
+                  <a class="outlink text-justify" href="" rel="nofollow" data-slug="meal-delivery/hellofresh/sl/3?template=meal-delivery" data-element-type="merchant-sitelink" data-element-id="3" target="_blank"><span class="bullet-item">•</span> Recipe Archive </a>
+                </li>
+              </ul>
+              <i class="fas fa-angle-double-right-mobile-icon" style="width:inherit;"><input class="vist_btn outlink btn btn-secondary btn-block mt-0 px-5 py-2 d-flex flex-row justify-content-center align-items-center" type="button" value="Visit Site" data-slug="meal-delivery/hellofresh?template=meal-delivery" name="" data-element-type="merchant-visit" data-element-id="350"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex flex-row custom-outbox align-items-center border mx-1 mt-5 pb-0 mb-3">
+        <div class="col-md-4 col-12 px-0 h-100 border-right border-light">
+          <div class="p-2 h-100 align-items-center d-flex justify-content-center  shadow-sm"><img class="img-fluid mx-auto merchant-img-outbox-logo mx-auto mw-100" src="https://res.cloudinary.com/nkh/image/upload/merchant-logo.png" width="80" height="90"></div>
+        </div>
+        <div class="col-md-4 col-12 px-0 h-100">
+          <div class="d-flex flex-row bd-highlight h-100 shadow-sm justify-content-center align-content-center align-items-center mx-auto">
+            <ul class="list-group w-100 justify-content-center d-flex flex-column mx-auto h-100 shadow-sm col-12 pr-0">
+              <li class="list-group-item border-0 my-0 d-flex flex-row  px-0">
+                <a class="outlink ml-5 list-link w-100" href="" rel="nofollow" data-slug="meal-delivery/hellofresh/sl/1?template=meal-delivery" data-element-type="merchant-sitelink" data-element-id="1"><span class="bullet-item">•</span> Choose a Meal Plan </a>
+              </li>
+              <li class="list-group-item border-0 my-0 d-flex flex-row px-0">
+                <a class="outlink ml-5 list-link w-100" href="" rel="nofollow" data-slug="meal-delivery/hellofresh/sl/2?template=meal-delivery" data-element-type="merchant-sitelink" data-element-id="2"><span class="bullet-item">•</span> How It Works </a>
+              </li>
+              <li class="list-group-item border-0 my-0 d-flex flex-row px-0">
+                <a class="outlink ml-5 list-link w-100" href="" rel="nofollow" data-slug="meal-delivery/hellofresh/sl/3?template=meal-delivery" data-element-type="merchant-sitelink" data-element-id="3"> <span class="bullet-item">•</span> Recipe Archive </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 d-flex flex-column  shadow-sm justify-content-center align-items-center py-3 border-left bg-gray h-100"><i class="fas fa-angle-double-right-desktop-icon-callout">
+            <div class="px-2 my-0 py-0 w-249"><input class="vist_btn outlink btn btn-secondary btn-block custom-outlink-btn py-2 px-5 text-uppercase d-flex flex-row justify-content-center align-items-center" type="button" value="Visit Site" data-slug="meal-delivery/hellofresh?template=meal-delivery" name="" data-element-type="merchant-visit" data-element-id="350"> </div>
+          </i> </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" style="">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js">
+  </script>
+
+
+</body></html>
 </head>
 
 <body class="body-wrapper">
