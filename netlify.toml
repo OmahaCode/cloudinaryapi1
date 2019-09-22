@@ -7,9 +7,9 @@
 #    that is where we will look for package.json/.nvmrc/etc not repo root!
 
 [build]
-  base    = "site"
-  publish = "public"
-  command = "make"
+  base    = "cloudinaryapi"
+  publish = "cloudinaryapi/public"
+  command = "gatsby build"
 
 # Production context: All deploys to the main
 # repository branch will inherit these settings.
